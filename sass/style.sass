@@ -1,0 +1,1658 @@
+$text_color_dark: #a1a2a6
+$text_color_light: #ffffff
+$active_color: #df2151
+$bg: #f4f4f4
+$border-color: #e5e5e5
+$step-color: #262b30
+$bg-step-header: #f5f7f7
+$step5_border: #ecedf1
+
+*
+	box-sizing: border-box
+
+body 
+	background-color: #222529
+	font-family: 'Museo Sans 500', sans-serif
+	overflow-x: hidden 
+
+h2
+	font-size: 14px
+	font-weight: 400
+	color: $text_color_light
+	letter-spacing: 2.8px
+	text-transform: uppercase
+h3
+	margin-top: 10px
+	font-size: 14px
+	color: $text_color_dark
+
+.button
+	padding: 28px 42px
+	border: none
+	border-radius: 10px
+	background-color: $active_color
+	color: $text_color_light
+	font-family: "Museo Sans 900"
+	font-size: 14px
+	font-weight: 400
+	text-transform: uppercase
+	letter-spacing: 1.4px
+	box-shadow: 0 28px 100px -20px rgba($active_color, 0.5)
+	transition: 0.5s
+	&:hover
+		background-color: darken($active_color, 8%)
+		box-shadow: none
+		cursor: pointer
+	&:focus
+		outline: none
+	&:active
+		background-color: $active_color
+	&-long
+		padding: 28px 48px
+.button.disabled 
+  background-color: $text_color_dark
+  pointer-events: none
+  box-shadow: none
+
+
+.section-title
+	font-size: 24px
+	font-weight: 400
+	color: $step-color
+	text-align: center
+.section-subtitle
+	margin-top: 10px
+	font-weight: 400
+	text-align: center
+	font-size: 16px
+	color: $text_color_dark
+
+#romFirst
+	background: url(../img/rooms/studia.png) no-repeat center
+#romSecond
+	background: url(../img/rooms/1room.png) no-repeat center
+#romThird
+	background: url(../img/rooms/2room.png) no-repeat center
+#romFourth
+	background: url(../img/rooms/3room.png) no-repeat center
+#romFifth
+	background: url(../img/rooms/4room.png) no-repeat center
+#romSix
+	background: url(../img/rooms/more4.png) no-repeat center
+
+#houseFirst
+	background: url(../img/houses/ot35.png) no-repeat center
+#houseSecond
+	background: url(../img/houses/ot35.png) no-repeat center
+#houseThird
+	background: url(../img/houses/ot50.png) no-repeat center
+#houseFourth
+	background: url(../img/houses/ot60.png) no-repeat center
+#houseFifth
+	background: url(../img/houses/ot80.png) no-repeat center
+#houseSix
+	background: url(../img/houses/ot100.png) no-repeat center				
+
+#firstRepairs
+	background: url(../img/repairs/Безремонта.png) no-repeat center
+#secondRepairs
+	background: url(../img/repairs/Чистовой.png) no-repeat center
+#thirdRepairs
+	background: url(../img/repairs/Российский.png) no-repeat center
+#fourthRepairs
+	background: url(../img/repairs/Современный.png) no-repeat center
+
+.map-wrapper
+	position: relative
+	ml123
+ width: 347px
+ height: 347px
+ margin-top: 30px
+ z-index: 0
+.map
+	margin-left: 70px
+ position: relative
+ width: 347px
+ height: 347px
+ z-index: 2
+ background: url(../img/step/outline.svg) no-repeat
+ background-size: contain
+.map-part
+	position: absolute
+ opacity: 0
+ transition: opacity 500ms
+ z-index: 1
+.map-part.active, .map-part.hover
+ opacity: 1
+
+#q1m1 
+ top: 113px		
+ left: 71px	
+ width: 166px		
+ height: 260px		
+ background: url(../img/step/m1.svg) no-repeat		
+ background-size: contain	
+#q1m2
+ top: 49px
+ left: 72px
+ width: 182px
+ height: 118px
+ background: url(../img/step/m2.svg) no-repeat
+ background-size: contain
+#q1m3 
+ top: 1px
+ left: 164px
+ width: 186px
+ height: 143px
+ background: url(../img/step/m3.svg) no-repeat
+ background-size: contain
+#q1m4 
+ top: 41px
+ left: 236px
+ width: 170px
+ height: 176px
+ background: url(../img/step/m4.svg) no-repeat
+ background-size: contain
+#q1m5
+ top: 172px
+ left: 237px
+ width: 178px
+ height: 240px
+ background: url(../img/step/m5.svg) no-repeat
+ background-size: contain
+#q1m6
+ top: 216px
+ left: 200px
+ width: 159px
+ height: 224px
+ background: url(../img/step/m6.svg) no-repeat
+ background-size: contain
+#q1m7
+ top: 176px
+ left: 137px
+ width: 119px
+ height: 250px
+ background: url(../img/step/m7.svg) no-repeat
+ background-size: contain
+
+.checkmark
+	display: none
+	margin-left: -10px
+ transform: translateY(0px)
+	&::before
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		background-color: $active-color
+		width: 15px
+		height: 15px
+		border-radius: 50%
+		transform: translateX(-22px)
+.checkmark.active
+	display: inline-block
+	
+
+.main
+	display: block
+	position: relative
+	padding-top: 40px
+	padding-bottom: 40px
+	background: black url(../img/main/main-bg1440.jpg) no-repeat center
+	background-size: cover
+	&-logo
+		width: 114px
+		height: 80px
+	&-title
+		margin-top: 22px 
+	&-contacts
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+	 align-items: flex-end
+		&__phone
+			padding-top: 22px
+			font-size: 14px
+			font-weight: 400
+			color: $text_color_light
+			letter-spacing: 2.8px
+			text-transform: uppercase
+		&__addres
+			margin-top: 10px
+			font-size: 14px
+			font-weight: 400
+			color: $text_color_light
+			br
+				display: none
+	&-center
+		&__title
+			margin-top: 123px
+			font-size: 36px
+			font-family: 'Museo Sans 900', sans-serif
+			line-height: 46px
+			letter-spacing: 1.8px
+			color: $text_color_light
+			text-transform: uppercase
+		&__subtitle
+			margin-top: 39px
+			font-family: 'Museo Sans 300', sans-serif
+			font-size: 24px
+			font-weight: 400
+			line-height: 31px
+			color: $text_color_light
+		&__offer
+			font-family: 'Museo Sans 300', sans-serif
+			margin-top: 38px
+			margin-bottom: 45px
+			font-size: 16px
+			font-weight: 400
+			color: $text_color_light
+		&__click
+			display: flex
+			align-items: center
+		&__answer
+			margin-left: 91px
+			font-size: 18px
+			font-weight: 400
+			line-height: 39px
+			color: $text_color_dark
+			&::before
+				content: ''
+				display: block
+				background-color: $text_color_dark
+				width: 30px
+				height: 2px
+				transform: translate(-55px, 21px)
+		&__img
+			width: 461px
+			height: 482px
+			margin-top: 55px
+			background: url(../img/main/main-home.png) no-repeat center
+	&-footer
+		margin-top: 37px
+		&__descr
+			display: block
+			&__title
+			&__subtitle
+				color: $text_color_dark
+		&__btn
+			display: none
+		span
+			display: none
+
+.overlay 
+	position: fixed
+	display: none
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.5)
+	z-index: 1
+	.step
+		position: fixed
+		left: 50%
+		top: 50%
+		max-width: 945px
+		width: 100%
+		transform: translate(-50%, -50%)
+		border-radius: 10px
+		&-header
+			padding: 15px 25px 15px 28px
+		 background-color: $text_color_light
+			max-width: 945px
+			width: 100%
+			border-radius: 10px 10px 0px 0px
+			&__step
+				margin-right: 29px
+				font-family: 'Museo Sans 900'
+				font-size: 18px
+				font-weight: 400
+				line-height: 39px
+				color: $step-color
+			&__lineprogress
+				display: flex
+				justify-content: center
+				align-items: center
+			&__progress
+				margin-right: 30px
+				border-radius: 10px
+				height: 5px
+				width: 68px
+				background-color: $border-color
+				&_active
+					background-color: $active-color
+			&__close
+				margin-left: 40px
+				font-family: 'Museo Sans 900'
+				font-size: 18px
+				font-weight: 400
+				line-height: 39px
+				color: $border-color
+				&:hover
+					color: darken($active-color, 8%)
+					text-decoration: underline
+	.step1
+		&-center
+			padding-top: 10px
+			padding-bottom: 48px
+			background-size: auto
+			background-color: $text_color_light
+			border-radius: 0px 0px 10px 10px
+			background: url(../img/step/bg.png) no-repeat center
+			background-size: cover	
+			&__btn
+				margin-top: 20px			
+			&__areas
+				margin-top: 32px
+				margin-left: 98px
+			&__area
+				margin-bottom: 15px
+				font-size: 14px
+				font-weight: 400
+				color: $text_color_dark
+				.text-container
+					margin-bottom: 10px
+					&::before
+						content: ''
+						display: inline-block
+						vertical-align: middle
+						background-color: $text_color_light
+						width: 20px
+						height: 20px
+						border: 3px solid #ecedf1
+						border-radius: 50%
+						transform: translateX(-11px)
+					span
+						vertical-align: middle
+				input
+					display: none
+					&:checked
+						&+label::before
+							background-color: $active-color
+							border: 3px solid #ecedf1
+ .step1-center__area.active
+		color: $step-color
+		font-family: "Museo Sans 700"
+		font-size: 14px
+		font-weight: 400
+	// .step1-center__area.active input::before
+	// 	background-color: transparent
+	// 	border: 3px solid #ecedf1
+	.step2
+		display: none
+		&-center
+			padding-top: 10px
+			padding-bottom: 46px
+			background-size: auto
+			background-color: $text_color_light
+			border-radius: 0px 0px 10px 10px
+			&__prev
+				display: block
+				margin-top: 15px
+				font-family: "Museo Sans 300"
+				font-size: 18px
+				font-weight: 400
+				color: $text_color_dark
+				&:hover
+					color: darken($active-color, 8%)
+					text-decoration: underline
+			&__btn
+				margin-top: 20px
+				display: block
+			&__rooms
+				margin-top: 32px
+				margin-left: 67px
+				margin-right: 68px
+			&__room
+				position: relative
+				display: flex
+				align-items: center
+				margin-bottom: 30px
+				width: 250px
+				height: 113px
+				border-radius: 10px
+				font-size: 14px
+				font-family: 'Museo sans 700', sans-serif
+				font-weight: 400
+				line-height: 39px
+				color: $text_color_light
+				z-index: 1
+			 &:hover
+			 	transform: scale(1.05)
+			 	cursor: pointer
+			&__descr
+				position: absolute
+				display: block
+				top: 65px
+				left: 0px
+				span
+					margin-left: 25px
+					vertical-align: middle
+					&::before
+						content: ''
+						display: inline-block
+						vertical-align: middle
+						background-color: transparent
+						width: 20px
+						height: 20px
+						border: 3px solid #ecedf1
+						border-radius: 50%
+						transform: translateX(-10px)
+				input
+					display: none
+					&:checked
+						&+span::before
+							background-color: $active-color
+							border: 3px solid #ecedf1
+
+	.step3
+		display: none
+		&-center
+			padding-top: 10px
+			padding-bottom: 48px
+			background-size: auto
+			background-color: $text_color_light
+			border-radius: 0px 0px 10px 10px
+			&__btn
+				margin-top: 20px
+			&__housing
+				margin-top: 26px
+			&__house
+				position: relative
+				display: flex
+				align-items: center
+				margin-bottom: 28px
+				width: 359px
+				height: 70px
+				font-size: 14px
+				font-family: 'Museo sans 900', sans-serif
+				font-weight: 400
+				line-height: 39px
+				color: $text_color_light
+				z-index: 1
+				border-radius: 10px
+				&:hover
+					transform: scale(1.05)
+					cursor: pointer
+				span
+					margin-left: 25px
+					vertical-align: middle
+					&::before
+						content: ''
+						display: inline-block
+						vertical-align: middle
+						background-color: transparent
+						width: 20px
+						height: 20px
+						border: 3px solid #ecedf1
+						border-radius: 50%
+						transform: translateX(-10px)
+				input
+					display: none
+					&:checked
+						&+span::before
+							background-color: $active-color
+							border: 3px solid #ecedf1
+			&__prev
+				display: block
+				margin-top: 20px
+				font-size: 18px
+				font-weight: 400
+				line-height: 39px
+				color: $text_color_dark
+				&:hover
+					color: darken($active-color, 8%)
+					text-decoration: underline
+	.step4
+		display: none
+		&-center
+			padding-top: 10px
+			padding-bottom: 48px
+			background-size: auto
+			background-color: $text_color_light
+			border-radius: 0px 0px 10px 10px
+			&__btn
+				margin-top: 20px
+			&__descr
+				display: none
+				min-height: 80px
+			&__repairs
+				margin-top: 26px
+			&__repair
+				position: relative
+				display: flex
+				align-items: center
+				margin-bottom: 35px
+				padding-left: 19px
+				width: 360px
+				height: 113px
+				font-size: 14px
+				font-family: 'Museo sans 900', sans-serif
+				font-weight: 400
+				color: $text_color_light
+				border-radius: 10px
+				z-index: 1
+				&:hover
+					transform: scale(1.05)
+					cursor: pointer
+					&::before
+						content: ''
+						position: absolute	
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						background-color: rgba(0, 0, 0, 0.5)
+						border-radius: 10px
+						z-index: -1
+					.step4-center__descr
+						display: block
+				input
+					display: none
+					&:checked
+						&+span::before
+							display: block
+							background-color: $active-color
+							border: 3px solid #ecedf1
+				&title
+					display: block
+					font-family: 'Museo Sans 900', sans-serif
+					font-size: 14px
+					font-weight: 400
+				&subtitle
+					display: block
+					margin-top: 7px
+					font-family: "Museo Sans 500"
+					font-size: 12px
+				&name
+					position: absolute
+					display: block
+					top: 75px
+					left: 30px
+					&::before
+						content: ''
+						display: inline-block
+						vertical-align: middle
+						background-color: transparent
+						width: 20px
+						height: 20px
+						border: 3px solid #ecedf1
+						border-radius: 50%
+						transform: translate(-10px, -2px)			
+			&__prev
+				display: block
+				margin-top: 20px
+				font-size: 18px
+				font-weight: 400
+				line-height: 39px
+				color: $text_color_dark
+				&:hover
+					color: darken($active-color, 8%)
+					text-decoration: underline
+	.step4-center__repairname.active::before
+		display: inline-block
+		background-color: $active-color
+		border: 3px solid #ecedf1
+	.step5
+		display: none
+		&-center
+			padding-top: 10px
+			padding-bottom: 48px
+			background-size: auto
+			background-color: $text_color_light
+			border-radius: 0px 0px 10px 10px
+			&__btn
+				margin-top: 20px
+			&__budgets
+				margin-top: 26px
+			&__budget
+				position: relative
+				display: flex
+				align-items: center
+				margin-bottom: 28px
+				width: 359px
+				height: 70px
+				background-color: transparent
+				border: 1px solid $step5_border
+				font-size: 14px
+				font-family: 'Museo sans 900', sans-serif
+				font-weight: 400
+				color: $step-color
+				z-index: 1
+				border-radius: 10px
+			 &:hover
+			 	transform: scale(1.05)
+			 	cursor: pointer
+				&::before
+					content: ''
+					position: absolute	
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					border-radius: 10px
+					z-index: -1
+				span
+					margin-left: 25px
+					vertical-align: middle
+					&::before
+						content: ''
+						display: inline-block
+						vertical-align: middle
+						background-color: transparent
+						width: 20px
+						height: 20px
+						border: 3px solid #ecedf1
+						border-radius: 50%
+						transform: translateX(-10px)
+				input
+					display: none
+					&:checked
+						&+span::before
+							background-color: $active-color
+							border: 3px solid $text_color_dark
+			&__prev
+				display: block
+				margin-top: 20px
+				font-size: 18px
+				font-weight: 400
+				line-height: 39px
+				color: $text_color_dark
+				&:hover
+					color: darken($active-color, 8%)
+					text-decoration: underline
+	.step5-center__budget.active
+		background-color: $step5_border
+	.step6
+		display: none
+		&-center
+			padding-top: 10px
+			padding-bottom: 48px
+			background-size: auto
+			background-color: $text_color_light
+			border-radius: 0px 0px 10px 10px
+			&__btn
+				margin-top: 20px
+			&__ways
+				margin-top: 26px
+			&__way
+				position: relative
+				display: flex
+				align-items: center
+				margin-bottom: 28px
+				width: 359px
+				height: 70px
+				background-color: transparent
+				border: 1px solid $step5_border
+				font-size: 14px
+				font-family: 'Museo sans 900', sans-serif
+				font-weight: 400
+				line-height: 39px
+				color: $step-color
+				z-index: 1
+				border-radius: 10px
+				&:hover
+					transform: scale(1.05)
+					cursor: pointer
+				&::before
+					content: ''
+					position: absolute	
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					border-radius: 10px
+					z-index: -1
+				span
+					margin-left: 25px
+					vertical-align: middle
+					&::before
+						content: ''
+						display: inline-block
+						vertical-align: middle
+						background-color: transparent
+						width: 20px
+						height: 20px
+						border: 3px solid #ecedf1
+						border-radius: 50%
+						transform: translateX(-10px)
+				input
+					display: none
+					&:checked
+						&+span::before
+							background-color: $active-color
+							border: 3px solid $text_color_dark
+			&__prev
+				display: block
+				margin-top: 20px
+				font-size: 18px
+				font-weight: 400
+				line-height: 39px
+				color: $text_color_dark
+				&:hover
+					color: darken($active-color, 8%)
+					text-decoration: underline
+	.step6-center__way.active
+		background-color: $step5_border
+
+.result
+	position: relative
+	display: none
+	padding-top: 40px
+	padding-bottom: 1px
+	background: url('../img/result/Bg.jpg') no-repeat center
+	background-size: cover
+
+	&-center
+		&__title
+			margin-top: 123px
+			font-size: 36px
+			font-family: 'Museo Sans 900', sans-serif
+			line-height: 46px
+			letter-spacing: 1.8px
+			color: $text_color_light
+			text-transform: uppercase
+		&__subtitle
+			margin-top: 35px
+			font-size: 24px
+			font-weight: 400
+			line-height: 31px
+			color: $text_color_light
+			img
+				margin-left: 15px
+				vertical-align: middle
+		&__offer
+			margin-top: 37px
+			margin-bottom: 45px
+			font-size: 16px
+			font-weight: 400
+			color: $text_color_light
+		&__btn
+			background-color: $text_color_dark
+			box-shadow: 0 28px 100px -20px rgba($active_color, 0)
+			&:hover
+				background-color: $text_color_dark
+				box-shadow: none
+				cursor: pointer
+		&__img
+			margin-top: 58px
+			transform: translateX(168px)
+		&__mobileimg
+			display: none
+		&__form
+			&::before
+				content: ''
+				display: block
+				width: 310px
+				height: 2px
+				background-color: $text_color_dark
+				transform: translateY(45px)
+			img
+				margin-left: 12px
+				width: 20px
+				height: 24px
+				vertical-align: middle
+			input
+				display: inline-block
+				margin-left: 14px
+				background-color: transparent
+				border: none
+				width: 310px
+				vertical-align: middle
+				font-size: 14px
+				font-weight: 400
+				line-height: 39px
+				color: $text_color_dark
+				&:focus
+					outline: none
+		&__btn
+			display: block
+			margin-top: 39px
+.overlayThanks
+	position: fixed
+	display: none
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.5)
+	z-index: 10
+	.thanks
+		position: fixed
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		display: block
+		margin-left: auto
+		margin-right: auto
+		padding-top: 95px
+		padding-bottom: 102px
+		width: 945px
+		border-radius: 10px
+		text-align: center
+		background-color: $text_color_light
+		&-logo
+			margin-left: auto
+			margin-right: auto
+			width: 60px
+			height: 60px
+		&-title
+			margin-top: 63px
+			color: $step-color
+			font-family: "Museo Sans 900", sans-serif
+			font-size: 36px
+			font-weight: 400
+			line-height: 39px
+		&-subtitle
+			margin-top: 31px
+			font-size: 18px
+			font-weight: 400
+			line-height: 39px
+		&-btn
+			margin-left: auto
+			margin-right: auto
+			margin-top: 44px
+			max-width: 312px
+
+@media (min-width: 1440px)
+ .main
+ 	padding-bottom: 118px
+ .main-center
+ 	position: absolute
+ 	top: 50%
+ 	transform: translateY(-50%)
+ .main-center__img
+ 	position: relative
+ 	top: 50%
+ 	transform: translateY(-50%)
+ .main-footer__title
+ 	margin-top: 80px
+	.result
+		padding-top: 40px
+		padding-bottom: 0px
+		padding-right: 70px
+	.result-center
+		margin-top: 0px
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+	.result-center__title
+		margin-top: 0px
+	.result-center__img
+		margin-top: 15px
+		position: relative
+		top: 50%
+		transform: translate(250px, -50%)
+
+@media (min-width: 1680px)
+	.main
+		height: 100vh
+	.result
+		height: 100vh
+		padding-right: 0px
+	.result-center__img
+		margin-top: 58px
+		position: relative
+		top: 50%
+		transform: translate(333px, -50%)
+
+@media (min-width: 1920px)
+	.result-center__img
+		transform: translate(452px, -50%)
+
+@media (min-height: 950px)
+	.main-center__title
+		margin-top: 190px
+	.main-center__img
+		margin-top: 100px
+	.main-footer__title
+		margin-top: 100px
+	.result-center__title
+		margin-top: 123px
+
+@media (max-width: 1200px)
+	.result-center__img
+		display: none
+	.result
+		height: 100vh
+	.main
+		height: 100vh
+_:-o-prefocus, .main 
+ padding-bottom: 90px
+
+
+@media (max-width: 813px)
+ h2
+ 	letter-spacing: 1px
+	h3
+		color: $text_color_light
+		margin: 0
+	.map-wrapper
+		display: block
+		right: 50px
+	.section-title
+		font-size: 18px
+	.section-subtitle
+		font-size: 10px
+	.main
+		height: 100%
+		padding-top: 49px
+		padding-bottom: 68px
+		background: black url(../img/table/main-bg.jpg) no-repeat center
+		background-size: cover
+		&-logo
+			height: 66px
+		&-title
+			margin-top: 35px
+			font-family: 'Museo Sans 700'
+			font-size: 18px
+			letter-spacing: 1px
+			text-transform: uppercase
+			text-align: center
+		&-subtitle
+			text-align: center
+			font-size: 18px
+		&-contacts
+		 text-align: right
+			&__phone
+				padding-top: 12px
+				font-size: 16px
+				font-family: 'Museo Sans 700'
+				letter-spacing: 0px
+			&__addres
+				font-size: 14px
+				font-family: 'Museo Sans 300'
+				color: $text_color_dark
+				br
+					display: none
+		&-center
+			text-align: center
+			&__title
+				margin-top: 43px
+				font-size: 28px
+				line-height: 34px
+				letter-spacing: 1px
+			&__subtitle
+				margin-top: 34px
+				font-size: 22px
+				font-weight: 400
+				line-height: 24px
+			&__offer
+				margin-top: 26px
+				margin-bottom: 38px
+				font-size: 19px
+				font-weight: 400
+			&__click
+				flex-direction: column
+			&__answer
+				margin-top: 18px
+				margin-left: 0
+				text-align: center
+				font-family: 'Museo Sans 300'
+				font-size: 18px
+				&::before
+					display: none
+			&__img
+				width: 292px
+				height: 305px
+				margin-top: 55px
+				margin-left: auto
+				margin-right: auto
+				background: url(../img/mobile/main-plane.png) no-repeat center
+		&-footer
+			display: none
+	.overlay 
+		position: absolute
+		.step
+			position: relative
+			left: 5%
+			top: 50%
+			width: 90%
+			transform: translate(0%, 0%)
+			border-radius: 0px
+			&-header
+				padding: 24px 23px 16px 23px
+			 background-color: $text_color_light
+				width: 100%
+				border-radius: 10px 10px 0px 0px
+				&__step
+					margin-top: 0px
+					margin-right: 0px
+					text-align: center
+					font-size: 26px
+				&__lineprogress
+					display: flex
+					justify-content: center
+					align-items: center
+				&__progress
+					margin-right: 15px
+					border-radius: 10px
+					height: 5px
+					width: 50px
+					background-color: $border-color
+					&_active
+						background-color: $active-color
+				&__close
+					display: block
+					margin-left: 0
+					text-align: center
+					font-family: 'Museo Sans 900'
+					font-size: 20px
+					font-weight: 400
+					line-height: 39px
+					color: $border-color
+					&:hover
+						color: darken($active-color, 8%)
+						text-decoration: underline
+		.step1
+			transform: translateY(-50%)
+			&-center
+				padding-bottom: 51px
+				&__areas
+					margin-top: 30px
+					margin-left: 30px
+				&__area
+				&__btn
+					display: flex
+					justify-content: center
+					align-items: center
+	 .step2
+	 	display: none
+	 	width: 100%
+	 	transform: translate(-5%, -50%)
+ 		&-center
+ 			padding-bottom: 51px
+		 	&__prev
+		 		margin-top: 15px
+					text-align: center
+					display: block
+		 	&__btn
+					margin-top: 20px
+					display: block
+					margin-left: auto
+					margin-right: auto
+ 			&__rooms
+ 				width: 90%
+ 				display: flex
+ 				flex-direction: column
+ 				margin-left: auto
+ 				margin-right: auto
+ 				align-items: center
+ 				justify-content: center
+ 				margin-top: 32px
+ 			&__room
+ 				margin-bottom: 15px
+ 				width: 180px
+ 			 &:hover
+ 			 	transform: scale(1)
+  .step3
+  	display: none
+  	width: 100%
+  	transform: translate(-5%, -50%)
+  	&-footer
+  		display: flex
+  		flex-direction: column
+  		align-items: flex-end
+  		justify-content: flex-end
+  	&-center
+  		padding-bottom: 51px
+  		&__btn
+  			display: block
+  			margin-left: auto
+  			margin-right: auto
+  			margin-top: 20px
+  		&__housing
+  		&__house
+  			margin-left: auto
+  			margin-right: auto
+  			margin-bottom: 15px
+  			width: 90%
+  			&:hover
+  				transform: scale(1)
+  			span
+  				margin-left: 25px
+  				vertical-align: middle
+  				&::before
+  					content: ''
+  					display: inline-block
+  					vertical-align: middle
+  					background-color: transparent
+  					width: 20px
+  					height: 20px
+  					border: 3px solid #ecedf1
+  					border-radius: 50%
+  					transform: translateX(-10px)
+  			input
+  				display: none
+  				&:checked
+  					&+span::before
+  						background-color: $active-color
+  						border: 3px solid #ecedf1
+  		&__prev
+  			text-align: center
+  .step4
+  	width: 100%
+  	transform: translate(-5%, -50%)
+  	color: $border-color
+  	&-center
+  		padding-bottom: 51px
+  		&__btn
+  			margin-top: 20px
+  			display: block
+  			margin-left: auto
+  			margin-right: auto
+  		&__descr
+  			display: none
+  			min-height: 80px
+  		&__repairs
+  			margin-top: 29px
+  		&__repair
+  			margin-bottom: 15px
+  			width: 90%
+  			height: 130px
+  			margin-left: auto
+  			margin-right: auto
+  			&:hover
+  				transform: scale(1)
+  			&name
+  				top: 100px			
+  		&__prev
+  			text-align: center
+  			margin-top: 20px
+  .step5
+  	width: 100%
+  	transform: translate(-5%, -50%)
+  	&-center
+  		padding-bottom: 51px
+  		&__btn
+  			display: block
+  			margin-top: 20px
+  			margin-left: auto
+  			margin-right: auto
+  		&__budget
+  			margin-bottom: 15px
+  			width: 100%
+  			margin-left: auto
+  			margin-right: auto
+  			height: 70px
+  		 &:hover
+  		 	transform: scale(1)
+  		&__prev
+  			text-align: center
+  .step6
+  	width: 100%
+  	transform: translate(-5%, -50%)
+  	&-center
+  		padding-bottom: 51px
+  		&__btn
+  			display: block
+  			margin-top: 20px
+  			margin-left: auto
+  			margin-right: auto
+  		&__way
+  			margin-bottom: 15px
+  			width: 100%
+  			margin-left: auto
+  			margin-right: auto
+  			&:hover
+  				transform: scale(1)
+  		&__prev
+  			text-align: center
+	.result
+		height: 100%
+		padding-top: 49px
+		padding-bottom: 40px
+		&-logo
+			height: 66px
+		&-title
+			margin-top: 35px
+			font-family: 'Museo Sans 700'
+			letter-spacing: 1px
+			text-transform: uppercase
+			text-align: center
+		&-subtitle
+			font-size: 18px
+			text-align: center
+		&-contacts
+		 text-align: right
+			&__phone
+				padding-top: 12px
+				font-size: 18px
+				font-family: 'Museo Sans 700'
+				letter-spacing: 0px
+			&__addres
+				font-size: 14px
+				font-family: 'Museo Sans 300'
+				color: $text_color_dark
+		&-center
+			text-align: center
+			&__title
+				margin-top: 43px
+				font-size: 28px
+				line-height: 34px
+				letter-spacing: 1px
+			&__subtitle
+				margin-top: 34px
+				font-family: 'Museo Sans 300'
+				font-size: 22px
+				font-weight: 300
+				line-height: 24px
+				br
+					display: none
+				img
+					display: none
+			&__offer
+				text-align: center
+				margin-top: 26px
+				margin-bottom: 38px
+				font-family: 'Museo Sans 300'
+				font-size: 19px
+				font-weight: 300
+				line-height: 20px
+				br
+					display: none
+			&__img
+				margin-top: 58px
+				transform: translateX(168px)
+			&__mobileimg
+				display: block
+				margin-left: 50%
+				margin-right: 50%
+				margin-top: 40px
+				width: 350px
+				height: 350px
+			&__form
+				text-align: center
+				&::before
+					content: ''
+					display: block
+					margin-left: auto
+					margin-right: auto
+					width: 40%
+					height: 2px
+					background-color: $text_color_dark
+					transform: translateY(45px)
+				img
+					margin-left: 0px
+					width: 20px
+					height: 24px
+					vertical-align: middle
+				input
+					text-align: center
+					display: inline-block
+					margin-left: 0px
+					background-color: transparent
+					border: none
+					width: auto
+					vertical-align: middle
+					font-size: 18px
+					font-weight: 400
+					line-height: 39px
+					color: $text_color_dark
+					&:focus
+						outline: none
+			&__btn
+				display: block
+				margin-top: 39px
+				margin-left: auto
+				margin-right: auto
+	.overlayThanks
+		position: absolute
+		height: 100%
+		.thanks
+			position: relative
+			left: 5%
+			top: 50%
+			transform: translate(-5%, -50%)
+			padding-top: 73px
+			padding-bottom: 71px
+			width: 90%
+			&-logo
+				margin-left: auto
+				margin-right: auto
+				width: 70px
+				height: 70px
+			&-title
+				margin-top: 51px
+				font-size: 24px
+			&-subtitle
+				margin-top: 31px
+				font-family: 'Museo Sans 300'
+				line-height: 1
+			&-btn
+				margin-left: auto
+				margin-right: auto
+				margin-top: 44px
+				max-width: 312px
+
+
+@media (max-width: 576px)
+	.map-wrapper
+		display: none
+	.section-title
+		font-size: 18px
+	.section-subtitle
+		font-size: 10px
+	.main
+		background: black url(../img/mobile/main-bg.jpg) no-repeat center
+		&-logo
+		&-title
+			font-size: 14px
+		&-subtitle
+			font-size: 12px
+		&-contacts
+		 text-align: right
+			&__phone
+				font-size: 14px
+			&__addres
+				font-size: 12px
+				br
+					display: block
+		&-center
+			&__title
+				font-size: 22px
+			&__subtitle
+				font-size: 19px
+			&__offer
+				font-size: 16px
+			&__click
+			&__answer
+			&__img
+				background: url(../img/mobile/main-plane.png) no-repeat center
+		&-footer
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-top: 37px
+			&__descr
+				display: flex
+				text-align: center
+				margin-top: 66px
+				&__title
+					font-size: 14px
+					font-family: 'Museo Sans 300'
+				&__subtitle
+					margin: 0px
+					font-size: 14px
+					font-family: 'Museo Sans 300'
+					color: $text_color_light
+			&__btn
+				display: block
+				background-color: $text_color_light
+				color: $step_color
+				box-shadow: 0 28px 100px -20px rgba($text_color_light, 0.5)
+				&:hover
+					background-color: darken($text_color_light, 2%)
+				&:active
+					background-color: $text_color_light
+			span
+				display: inline-block
+	.overlay 
+		.step
+			top: 5%
+			transform: translate(0%, -5%)
+			border-radius: 0px
+			&-header
+				&__step
+					font-size: 18px
+				&__lineprogress
+					margin-top: 14px
+				&__progress
+					margin-right: 10px
+					width: 36px
+				&__close
+					font-size: 14px
+		.step1
+			transform: translateY(-5%)
+			&-center
+				&__areas
+					margin-left: 0
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+				&__area
+				&__btn
+					display: flex
+					justify-content: center
+					align-items: center
+	 .step2
+	 	display: none
+	 	transform: translate(-5%, -2.5%)
+ 		&-center
+ 			&__rooms
+ 				width: 10%
+ 				display: flex
+ 				flex-direction: column
+ 				margin-left: auto
+ 				margin-right: auto
+ 				align-items: center
+ 				justify-content: center
+ 				margin-top: 32px
+  .step3
+  	transform: translate(-5%, -2.5%)
+  	&-center
+  		&__btn
+  			display: block
+  			margin-left: auto
+  			margin-right: auto
+  			margin-top: 20px
+  		&__housing
+  		&__house
+  			width: 70%
+  .step4
+  	transform: translate(-5%, -2.5%)
+  	&-center
+  		&__descr
+  			display: none
+  			min-height: 80px
+  		&__repair
+  			width: 75%
+  			height: 130px
+  			margin-left: auto
+  			margin-right: auto
+  .step5
+  	transform: translate(-5%, -2.5%)
+  	&-center
+  		padding-bottom: 51px
+  		&__btn
+  		&__budget
+  			width: 90%
+  		 &:hover
+  		 	transform: scale(1)
+  		&__prev
+  			text-align: center
+  .step6
+  	transform: translate(-5%, -2.5%)
+  	&-center
+  		&__way
+  			width: 90%
+	.result
+		&-logo
+			height: 66px
+		&-title
+			font-size: 14px
+		&-subtitle
+			font-size: 12px
+		&-contacts
+		&-center
+			&__title
+				font-size: 24px
+			&__subtitle
+				font-size: 20px
+			&__offer
+				font-size: 15px
+				br
+					display: none
+			&__img
+				margin-top: 58px
+				transform: translateX(168px)
+			&__mobileimg
+				display: block
+				margin-right: auto
+				margin-left: auto
+				margin-top: 40px
+				width: 292px
+				height: 305px
+			&__form
+				&::before
+					content: ''
+					display: block
+					margin-left: auto
+					margin-right: auto
+					width: 90%
+					height: 2px
+					background-color: $text_color_dark
+					transform: translateY(45px)
+				img
+					margin-left: 0px
+				input
+					margin-left: 0px
+					width: 50%
+					font-size: 14px
+	.overlayThanks
+		.thanks
+			top: 5%
+			transform: translate(-5%, 0%)
+
+@media (min-width: 577px) and (max-width: 813px) and (orientation: landscape)
+	.map-wrapper
+		display: none
+		right: 0
+	.overlay 
+		position: absolute
+		.step1
+			transform: translateY(-50%)
+			&-center
+				padding-bottom: 51px
+				&__areas
+					margin-left: 0
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+				&__area
+				&__btn
+					display: flex
+					justify-content: center
+					align-items: center
+	 .step2
+	 	display: none
+ 		&-center
+ 			&__rooms
+ 				width: 10%
+ 				display: flex
+ 				flex-direction: column
+ 				align-items: center
+ 				justify-content: center
+ 				margin-top: 32px
+ 			&__room
+ 				width: 250px
+  .step3
+  	display: none
+  	&-center
+  		&__btn
+  			display: block
+  			margin-left: auto
+  			margin-right: auto
+  			margin-top: 20px
+  		&__housing
+  		&__house
+  			margin-left: auto
+  			margin-right: auto
+  			margin-bottom: 15px
+  			width: 70%
+  			span
+  				margin-left: 25px
+  				vertical-align: middle
+  				&::before
+  					content: ''
+  					display: inline-block
+  					vertical-align: middle
+  					background-color: transparent
+  					width: 20px
+  					height: 20px
+  					border: 3px solid #ecedf1
+  					border-radius: 50%
+  					transform: translateX(-10px)
+  			input
+  				display: none
+  				&:checked
+  					&+span::before
+  						background-color: $active-color
+  						border: 3px solid #ecedf1
+  		&__prev
+  			text-align: center
+  .step4
+  	width: 100%
+  	transform: translate(-5%, -50%)
+  	color: $border-color
+  	&-center
+  		padding-bottom: 51px
+  		&__btn
+  			margin-top: 20px
+  			display: block
+  			margin-left: auto
+  			margin-right: auto
+  		&__descr
+  			display: none
+  			min-height: 80px
+  		&__repairs
+  			margin-top: 29px
+  		&__repair
+  			margin-bottom: 15px
+  			width: 300px
+  			height: 130px
+  			margin-left: auto
+  			margin-right: auto
+  			&name
+  				top: 100px			
+  		&__prev
+  			text-align: center
+  			margin-top: 20px
+  .step5
+  	width: 100%
+  	transform: translate(-5%, -50%)
+  	&-center
+  		padding-bottom: 51px
+  		&__btn
+  			display: block
+  			margin-top: 20px
+  			margin-left: auto
+  			margin-right: auto
+  		&__budget
+  			margin-bottom: 15px
+  			width: 85%
+  			margin-left: auto
+  			margin-right: auto
+  			height: 70px
+  		 &:hover
+  		 	transform: scale(1)
+  		&__prev
+  			text-align: center
+  .step6
+  	width: 100%
+  	transform: translate(-5%, -50%)
+  	&-center
+  		padding-bottom: 51px
+  		&__btn
+  			display: block
+  			margin-top: 20px
+  			margin-left: auto
+  			margin-right: auto
+  		&__way
+  			margin-bottom: 15px
+  			width: 85%
+  			margin-left: auto
+  			margin-right: auto
+  			&:hover
+  				transform: scale(1)
+  		&__prev
+  			text-align: center
+	.result
+		&-center
+			&__mobileimg
+				margin-top: 40px
+				margin-left: auto
+				margin-right: auto
+				width: 350px
+				height: 350px
+	

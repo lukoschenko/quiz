@@ -1,0 +1,828 @@
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/MuseoSans.css">
+    <link rel="stylesheet" href="css/reset.css">
+				<link rel="stylesheet" href="css/style.css">
+				<link rel="shortcut icon" type="image/jpg" href="img/FAV.jpg"/>
+				<link rel="stylesheet" href="css/animate.css">
+
+    <title>Бэст – центр недвижимости</title>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter49581292 = new Ya.Metrika2({
+                        id:49581292,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true,
+                        trackHash:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/49581292" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+  </head>
+  <body>
+
+				<div class="main">
+					<div class="container">
+						<div class="row ">
+							<div class="col-6 col-xl-2 ">
+								<img src="img/main/image.svg" alt="Логотип" class="main-logo">
+							</div>
+							<div class="col-12 col-xl-4 order-12 order-xl-1">
+								<h2 class="main-title">Бэст – центр недвижимости</h2>
+								<h3 class="main-subtitle">13 лет на рынке недвижимости</h3>
+							</div>
+							<div class="col-6 col-xl-6 order-1 order-xl-12">
+								<div class="main-contacts">
+									<p class="main-contacts__phone">8 (343) 310-03-23</p>
+									<p class="main-contacts__addres">г.Екатеринбург,<br> ул.8 Марта, 12А</p>
+								</div>
+							</div>
+						</div>
+							<div class="row">
+								<div class="col-12 col-lg-12 col-xl-7">
+									<div class="main-center">
+										<h1 class="main-center__title">Пройди тест<br> за 1 минуту и узнай:</h1>
+										<!-- /.main-center__title -->
+										<p class="main-center__subtitle">как выгодно купить квартиру<br> и сэкономить время на её поиске</p>
+										<!-- /.main-center__subtitle -->
+										<p class="main-center__offer">Получи бесплатную подборку квартир за прохождение </p>
+										<!-- /.main-center-offer -->
+										<div class="main-center__click">
+											<button onclick="yaCounter49581292.reachGoal('start');" type="button" class="main-center__btn button">Пройти тест</button>
+											<div class="main-center__answer">Всего 6 вопросов</div>
+											<!-- /.main-center-answer -->
+										</div>
+										<!-- /.main-center__click -->
+									</div>
+								</div>
+								<div class="col-12 col-lg-12 col-xl-5">
+									<div class="main-center__img"></div>
+								</div>
+								<div class="col-12 col-md-auto">
+									<div class="main-footer">
+										<button class="main-footer__btn button" type="button">Пройти тест</button>
+										<div class="main-footer__descr">
+											<h2 class="main-footer__title">ОГРН<span>:</span></h2>
+											<h3 class="main-footer__subtitle">1056603484838</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				
+				<form id="myForm" method="post">
+					<div class="overlay">
+						<div class="step1 step">
+							<div class="contaiter">
+								<div class="step-header">
+									<div class="row align-items-center">
+											<div class="col-12 col-lg-auto">
+												<div class="step-header__step">
+													Шаг 1 из 6
+												</div>
+											</div>
+											<div class="col-12 col-lg-8">
+												<div class="step-header__lineprogress step-header__lineprogress">
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+												</div>
+											</div>
+											<div class="col-12 col-lg-auto order-first order-lg-last">
+												<a href="#" class="step-header__close">Закрыть</a>
+											</div>
+									</div>
+								</div>
+								<!-- ./step1-header -->
+								<div class="step1-center">
+									<p class="section-title wow fadeInDown" data-id-delay="1s">
+									В каком районе вы бы хотели приобрести квартиру?
+									</p>
+									<p class="section-subtitle wow fadeInDown" data-id-delay="1s">
+										(Можно выбрать несколько вариантов ответов)
+									</p>
+									<div class="row">
+										<div class="col-12 col-md-5">
+											<div class="step1-center__areas wow fadeInLeft" data-wow-delay="0.3s">
+												<div class="step1-center__area" id="a1" data-id="1">
+													<input type="checkbox" name='area[]' id="first" data-id="1" value="Верх-Исетский район">
+													<label class="text-container" for="first" data-id="1">
+											  	<span class="checkmark" id="ch1" data-id="1"></span>
+														<span>Верх-Исетский район</span>
+													</label>
+												</div>
+												<div class="step1-center__area" id="a2" data-id="2">
+													<input type="checkbox" name='area[]' id="second" data-id="2" value="Железнодорожный район">
+													<label class="text-container" for="second" data-id="2">
+														<span class="checkmark" id="ch2" data-id="2"></span>
+														<span>Железнодорожный район</span>
+													</label>
+												</div>
+												<div class="step1-center__area" id="a3" data-id="3">
+													<input type="checkbox" name='area[]' id="third" data-id="3" value="Орджоникидзевский район">
+													<label class="text-container" for="third" data-id="3">
+														<span class="checkmark" id="ch3" data-id="3"></span>
+														<span>Орджоникидзевский район</span>
+													</label>
+												</div>
+												<div class="step1-center__area" id="a4" data-id="4">
+													<input type="checkbox" name='area[]' id="fourth" data-id="4" value="Кировский район">
+													<label class="text-container" for="fourth" data-id="4">
+														<span class="checkmark" id="ch4" data-id="4"></span>
+														<span>Кировский район</span>
+													</label>
+												</div>
+												<div class="step1-center__area" id="a5" data-id="5">
+													<input type="checkbox" name='area[]' id="fifth" data-id="5" value="Октябрьский район">
+													<label class="text-container" for="fifth" data-id="5">
+														<span class="checkmark" id="ch5" data-id="5"></span>
+														<span>Октябрьский район</span>
+													</label>
+												</div>
+												<div class="step1-center__area" id="a6" data-id="6">
+													<input type="checkbox" name='area[]' id="six" data-id="6" value="Чкаловский район">
+													<label class="text-container" for="six" data-id="6">
+														<span class="checkmark" id="ch6" data-id="6"></span>
+														<span>Чкаловский район</span>
+													</label>
+												</div>
+												<div class="step1-center__area" id="a7" data-id="7">
+													<input type="checkbox" name='area[]' id="seven" data-id="7" value="Ленинский район">
+													<label class="text-container" for="seven" data-id="7">
+														<span class="checkmark" id="ch7" data-id="7"></span>
+														<span>Ленинский район</span>
+													</label>
+												</div>
+												<div class="step1-center__area" id="a8" data-id="8">
+													<input type="checkbox" name='area[]' id="nothing" data-id="8" value="Пока не определились">
+													<label class="text-container" for="nothing" data-id="8">
+														<span class="checkmark" id="ch8" data-id="8"></span>
+														<span>Пока не определились</span>
+													</label>
+												</div>
+												<button type="button" class="step1-center__btn button disabled">Следующий шаг</button>
+											</div>
+											<!-- /.step1-center__areas -->
+										</div>
+										<!-- /.col-md-3 -->
+										<div class="col-md-6">
+											<div class="map-wrapper wow fadeInRight" data-wow-delay="0.3s">
+												<div id="q1m1" class="map-part"></div>
+												<div id="q1m2" class="map-part"></div>
+												<div id="q1m3" class="map-part"></div>
+												<div id="q1m4" class="map-part"></div>
+												<div id="q1m5" class="map-part"></div>
+												<div id="q1m6" class="map-part"></div>
+												<div id="q1m7" class="map-part"></div>
+												<div id="q1m8" class="map-part"></div>
+												<div class="map">
+												</div>
+											</div>
+										</div>
+										<!-- /.col-md-8 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.step1-center -->
+							</div>
+						</div>
+						<!-- ./step1 -->
+					
+						<div class="step2 step">
+							<div class="container">
+								<div class=" step-header">
+									<div class="row align-items-center">
+											<div class="col-12 col-lg-auto">
+												<div class="step-header__step">
+													Шаг 2 из 6
+												</div>
+											</div>
+											<div class="col-12 col-lg-8">
+												<div class="step-header__lineprogress">
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+												</div>
+											</div>
+											<div class="col-12 col-lg-auto order-first order-lg-last">
+												<a href="#" class="step-header__close">Закрыть</a>
+											</div>
+									</div>
+								</div> 
+								<!-- ./step2-header -->
+								<div class="step2-center">
+									<p class="section-title wow fadeInDown" data-id-delay="0.5s">
+									Какое количество комнат вам нужно?
+									</p>
+									<p class="section-subtitle wow fadeInDown" data-id-delay="0.5s">
+										(Можно выбрать несколько вариантов ответов)
+									</p>
+									<div class="step2-center__rooms">
+										<div class="row">
+											<div class="col-12 col-md-4">
+												<label for="firstRom" class="step2-center__room wow fadeInUp" data-wow-delay="0.1s" id="romFirst">
+													<div class="step2-center__descr">
+														<input type="checkbox" name="Rom[]" data-id="1" id="firstRom" value="Студия" >
+														<span>Студия</span>											
+													</div>
+												</label>
+											</div>
+											<!-- /.col-md -->
+											<div class="col-12 col-md-4">
+												<label for="secondRom" class="step2-center__room wow fadeInUp" data-wow-delay="0.2s" id="romSecond">
+													<div class="step2-center__descr">
+														<input type="checkbox" name="Rom[]" data-id="2" id="secondRom" value="1 комната">
+														<span>1 комната</span>
+													</div>
+												</label>
+												<!-- /.step2-center__room -->
+											</div>
+											<!-- /.col-md -->
+											<div class="col-12 col-md-4">
+												<label for="thirdRom" class="step2-center__room wow fadeInUp" data-wow-delay="0.3s" id="romThird">
+													<div class="step2-center__descr">
+														<input type="checkbox" name="Rom[]" data-id="3" id="thirdRom" value="2 комнаты">
+														<span>2 комнаты</span>
+													</div>
+												</label>
+												<!-- /.step2-center__room -->
+											</div>
+											<!-- /.col-md-4-->
+										</div>
+										<!-- /.row -->
+										<div class="row">
+											<div class="col-12 col-md-4">
+												<label for="fourthRom" class="step2-center__room wow fadeInUp" data-wow-delay="0.4s" id="romFourth">
+													<div class="step2-center__descr">
+														<input type="checkbox" name="Rom[]" data-id="4" id="fourthRom" value="3 комнаты">
+														<span>3 комнаты</span>
+													</div>
+												</label>
+												<!-- /.step2-center__room -->
+											</div>
+											<!-- /.col-md-4 -->
+											<div class="col-12 col-md-4">
+												<label for="fifthRom" class="step2-center__room wow fadeInUp" data-wow-delay="0.5s" id="romFifth">
+													<div class="step2-center__descr">
+														<input type="checkbox" name="Rom[]" data-id="5" id="fifthRom" value="4 комнаты">
+														<span>4 комнаты</span>
+													</div>
+												</label>
+												<!-- /.step2-center__room -->
+											</div>
+											<!-- /.col-md -->
+											<div class="col-12 col-md-4">
+												<label for="sixRom" class="step2-center__room wow fadeInUp" data-wow-delay="0.6s" id="romSix">
+													<div class="step2-center__descr">
+														<input type="checkbox" name="Rom[]" data-id="6" id="sixRom" value="Более 4 комнат">
+														<span>более 4-х комнат</span>
+													</div>
+												</label>
+												<!-- /.step2-center__room -->
+											</div>
+											<!-- /.col-md -->
+										</div>
+										<!-- /.row -->
+									</div>
+									<!-- /.step2-center__rooms -->
+										<div class="row align-items-center justify-content-center">
+											<div class="col-12 col-sm-6 col-md-5 col-lg-auto">
+												<a href="#" class="step2-center__prev">Вернуться на шаг назад</a>
+											</div>
+											<!-- /.col-md-3 -->
+											<div class="col-12 col-md-5 col-lg-4">
+												<button type="button" class="step2-center__btn button disabled button-long">Следующий шаг</button>
+											</div>
+											<!-- /.col-md-3 -->
+										</div>
+								</div>
+							</div>
+							<!-- /.container -->
+						</div>	
+						<!-- /.step2 -->
+					
+						<div class="step3 step">
+							<div class="container">
+								<div class="step-header">
+									<div class="row align-items-center">
+											<div class="col-12 col-lg-auto">
+												<div class="step-header__step">
+													Шаг 3 из 6
+												</div>
+											</div>
+											<div class="col-12 col-lg-8">
+												<div class="step-header__lineprogress">
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+												</div>
+											</div>
+											<div class="col-12 col-lg-auto order-first order-lg-last">
+												<a href="#" class="step-header__close">Закрыть</a>
+											</div>
+									</div>
+								</div> 
+								<!-- ./step3-header -->
+								<div class="step3-center">
+									<p class="section-title wow fadeInDown" data-id-delay="0.5s">Какая нужна площадь?</p>
+									<!-- /.section-title wow slideInDown  data-id-delay="0.2s"-->
+									<p class="section-subtitle wow fadeInDown" data-id-delay="0.5s">
+										(Можно выбрать несколько вариантов ответов)
+  							</p>
+									<div class="step3-center__housing">
+										<div class="row align-items-center justify-content-center">
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="firstHouse" class="step3-center__house wow fadeInUp" data-wow-delay="0.1s" id="houseFirst">
+													<input type="checkbox" name="house[]" id="firstHouse" data-id="1" value="До 35м^2">
+													<span>До 35 м<sup>2</sup></span>
+												</label>
+												<!-- /.step3-center__house -->
+											</div>
+											<!-- /.col-md-4 -->
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="secondHouse" class="step3-center__house wow fadeInUp" data-wow-delay="0.2s" id="houseSecond">
+													<input type="checkbox" name="house[]" id="secondHouse" data-id="2" value="От 35 до 50м^2">
+													<span>От 35 до 50 м<sup>2</sup></span>
+												</label>
+												<!-- /.step3-center__house -->
+											</div>
+											<!-- /.col-md-4 -->
+										</div>
+										<!-- /.row -->
+										<div class="row align-items-center justify-content-center">
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="thirdHouse" class="step3-center__house wow fadeInUp" data-wow-delay="0.3s" id="houseThird">
+													<input type="checkbox" name="house[]" id="thirdHouse" data-id="3" value="От 50 до 65м^2">
+													<span>От 50 до 65 м<sup>2</sup></span>
+												</label>
+												<!-- /.step3-center__house -->
+											</div>
+											<!-- /.col-md-4 -->
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="fourthHouse" class="step3-center__house wow fadeInUp" data-wow-delay="0.4s" id="houseFourth">
+													<input type="checkbox" name="house[]" id="fourthHouse" data-id="4" value="От 65 до 80м^2">
+													<span>От 65 до 80 м<sup>2</sup></span>
+												</label>
+												<!-- /.step3-center__house -->
+											</div>
+											<!-- /.col-md-4 -->
+										</div>
+										<!-- /.row -->
+										<div class="row align-items-center justify-content-center" data-id="5" value="От 80 до 100м^2">
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="fifthHouse" class="step3-center__house wow fadeInUp" data-wow-delay="0.5s" id="houseFifth">
+													<input type="checkbox" name="house[]" id="fifthHouse" value="От 80 до 100м^2">
+													<span>От 80 до 100 м<sup>2</sup></span>
+												</label>
+												<!-- /.step3-center__house -->
+											</div>
+											<!-- /.col-md-4 -->
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="sixHouse" class="step3-center__house wow fadeInUp" data-wow-delay="0.6s" id="houseSix">
+													<input type="checkbox" name="house[]" id="sixHouse" data-id="6" value="От 100м^2 и выше">
+													<span>От 100 м<sup>2</sup> и выше</span>
+												</label>
+												<!-- /.step3-center__house -->
+											</div>
+											<!-- /.col-md-4 -->
+										</div>
+										<!-- /.row -->
+									</div>
+									<!-- /.step3-center__housing -->
+									<div class="row align-items-center justify-content-center">
+										<div class="col-md-5 col-lg-3">
+											<a href="#" class="step3-center__prev">Вернуться на шаг назад</a>
+										</div>
+										<!-- /.col-md-3 -->
+										<div class="col-md-5 col-lg-4">
+											<button type="button" class="step3-center__btn button disabled button-long">Следующий шаг</button>
+										</div>
+										<!-- /.col-md-3 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.step3-center -->
+							</div>
+							<!-- /.container -->
+						</div>
+						<!-- /.step3 step -->
+						<div class="step4 step">
+							<div class="container">
+								<div class="step-header">
+									<div class="row align-items-center">
+											<div class="col-12 col-lg-auto">
+												<div class="step-header__step">
+													Шаг 4 из 6
+												</div>
+											</div>
+											<div class="col-12 col-lg-8">
+												<div class="step-header__lineprogress">
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress"></div>
+													<div class="step-header__progress"></div>
+												</div>
+											</div>
+											<div class="col-12 col-lg-auto order-first order-lg-last">
+												<a href="#" class="step-header__close">Закрыть</a>
+											</div>
+									</div>
+								</div> 
+								<!-- ./step4-header -->
+								<div class="step4-center">
+									<p class="section-title wow slideInDown" data-id-delay="0.5s">Какой нужен ремонт?</p>
+									<!-- /.section-title wow slideInDown  data-id-delay="0.2s"-->
+									<p class="section-subtitle wow slideInDown" data-id-delay="0.2s">
+										(Можно выбрать несколько вариантов ответов)
+  							</p>
+									<div class="step4-center__repairs">
+										<div class="row align-items-center justify-content-center">
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="repairsFirst" class="step4-center__repair wow fadeInUp" data-wow-delay="0.1s" id="firstRepairs">
+													<input type="checkbox" name="repairs[]" id="repairsFirst" data-id="1" value="Без ремонта">
+													<div class="step4-center__descr">
+														<p class="step4-center__repairtitle">Без ремонта</p>
+														<p class="step4-center__repairsubtitle">Черновая отделка от застройщика</p>
+													</div>
+													<span class="step4-center__repairname" data-id="1">Без ремонта</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="repairsSecond" class="step4-center__repair wow fadeInUp" data-wow-delay="0.2s" id="secondRepairs">
+													<input type="checkbox" name="repairs[]" id="repairsSecond" data-id="2" value="Чистовой ремонт">
+													<div class="step4-center__descr">
+														<span class="step4-center__repairtitle">Чистовой ремонт</span>
+														<span class="step4-center__repairsubtitle">Косметическая отделка от застройщика,<br> поклеены обои, выложен ламинат, побелен потолок</span>
+													</div>
+													<span class="step4-center__repairname" data-id="2">Чистовой ремонт</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+										</div>
+										<!-- /.row -->
+										<div class="row align-items-center justify-content-center">
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="repairsThird" class="step4-center__repair wow fadeInUp" data-wow-delay="0.3s" id="thirdRepairs">
+													<input type="checkbox" name="repairs[]" id="repairsThird" data-id="3" value="Российский ремонт">
+													<div class="step4-center__descr">
+														<span class="step4-center__repairtitle">Российский ремонт</span>
+														<span class="step4-center__repairsubtitle">Деревянные плинтусы, потолочная плитка<br> из пенопласта, деревянные окна и т.д</span>
+													</div>
+														<span class="step4-center__repairname" data-id="3">Российский ремонт</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+											<div class="col-12 col-md-6 col-lg-5">
+												<label for="repairsFourth" class="step4-center__repair wow fadeInUp" data-wow-delay="0.4s" id="fourthRepairs">
+													<input type="checkbox" name="repairs[]" id="repairsFourth" data-id="4" value="Современный ремонт">
+													<div class="step4-center__descr">
+														<span class="step4-center__repairtitle">Современный ремонт</span>
+														<span class="step4-center__repairsubtitle">Евроремонт, хайтек, лофт, модерн и т.д.</span>
+													</div>
+													<span class="step4-center__repairname" data-id="4" >Современный ремонт</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+										</div>
+										<!-- /.row -->
+										<div class="row align-items-center justify-content-center">
+											<div class="col-12 col-md-5 col-lg-3">
+												<a href="#" class="step4-center__prev">Вернуться на шаг назад</a>
+											</div>
+											<!-- /.col-md-3 -->
+											<div class="col-12 col-md-5 col-lg-4">
+												<button type="button" class="step4-center__btn button disabled button-long">Следующий шаг</button>
+											</div>
+											<!-- /.col-md-3 -->
+										</div>
+										<!-- /.row -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ./step4 -->
+					
+						<div class="step5 step">
+							<div class="container">
+								<div class="step-header">
+									<div class="row align-items-center">
+											<div class="col-12 col-lg-auto">
+												<div class="step-header__step">
+													Шаг 5 из 6
+												</div>
+											</div>
+											<div class="col-12 col-lg-8">
+												<div class="step-header__lineprogress">
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress
+													step-header__progress_active"></div>
+													<div class="step-header__progress"></div>
+												</div>
+											</div>
+											<div class="col-12 col-lg-auto order-first order-lg-last">
+												<a href="#" class="step-header__close">Закрыть</a>
+											</div>
+									</div>
+								</div> 
+								<!-- ./step5-header -->
+								<div class="step5-center">
+									<p class="section-title wow slideInDown" data-id-delay="0.5s">Примерно на какой бюджет ориентируетесь?</p>
+									<!-- /.section-title wow slideInDown  data-id-delay="0.2s"-->
+									<p class="section-subtitle wow slideInDown" data-id-delay="0.5s">
+										(Можно выбрать несколько вариантов ответов)
+									</p>
+									<div class="step5-center__budgets">
+										<div class="row align-items-center justify-content-center">
+											<div class="col-md-5 col-lg-5">
+												<label for="budgetFirst" class="step5-center__budget wow fadeInUp" data-wow-delay="0.1s" data-id="1" id="firstBudget">
+													<input type="checkbox" name="budget[]" id="budgetFirst" data-id="1" value="До 2 000 000 ₽">
+													<span>До 2 000 000 ₽</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+											<div class="col-md-5 col-lg-5">
+												<label for="budgetSecond" class="step5-center__budget wow fadeInUp" data-wow-delay="0.2s" data-id="2" id="secondBudget">
+													<input type="checkbox" name="budget[]" id="budgetSecond" data-id="2" value="2 000 000 ₽ – 3 000 000 ₽">
+													<span>2 000 000 ₽ – 3 000 000 ₽</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+										</div>
+										<!-- /.row -->
+										<div class="row align-items-center justify-content-center">
+											<div class="col-md-5 col-lg-5">
+												<label for="budgetThird" class="step5-center__budget wow fadeInUp" data-wow-delay="0.3s" data-id="3" id="thirdBudget">
+													<input type="checkbox" name="budget[]" id="budgetThird" data-id="3" value="3 000 000 ₽ – 4 000 000 ₽">
+													<span>3 000 000 ₽ – 4 000 000 ₽</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+											<div class="col-md-5 col-lg-5">
+												<label for="budgetFourth" class="step5-center__budget wow fadeInUp" data-wow-delay="0.4s" data-id="4" id="fourthBudget">
+													<input type="checkbox" name="budget[]" id="budgetFourth" data-id="4" value="4 000 000 ₽ и выше">
+													<span>4 000 000 ₽ и выше</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+										</div>
+										<!-- /.row -->
+										<div class="row align-items-center">
+											<div class="col-md-5 col-lg-5 offset-md-1">
+												<label for="budgetFifrth" class="step5-center__budget wow fadeInUp" data-wow-delay="0.5s" id="fifthBudget" data-id="5">
+													<input type="checkbox" name="budget[]" id="budgetFifrth" data-id="5" value="Пока не определились">
+														<span>Пока не определились</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+										</div>
+										<!-- /.row -->
+					
+										<div class="row align-items-center justify-content-center">
+											<div class="col-md-5 col-lg-3">
+												<a href="#" class="step5-center__prev">Вернуться на шаг назад</a>
+											</div>
+											<!-- /.col-md-3 -->
+											<div class="col-md-5 col-lg-4">
+												<button type="button" class="step5-center__btn button disabled button-long">Следующий шаг</button>
+											</div>
+											<!-- /.col-md-3 -->
+										</div>
+										<!-- /.row -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ./step5 -->
+					
+						<div class="step6 step">
+							<div class="container">
+								<div class="step-header">
+									<div class="row align-items-center">
+											<div class="col-12 col-lg-auto">
+												<div class="step-header__step">
+													Шаг 6 из 6
+												</div>
+											</div>
+											<div class="col-12 col-lg-8">
+												<div class="step-header__lineprogress">
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress step-header__progress_active"></div>
+													<div class="step-header__progress
+													step-header__progress_active"></div>
+													<div class="step-header__progress
+													step-header__progress_active"></div>
+												</div>
+											</div>
+											<div class="col-12 col-lg-auto order-first order-lg-last">
+												<a href="#" class="step-header__close">Закрыть</a>
+											</div>
+									</div>
+								</div> 
+								<!-- ./step6-header -->
+								<div class="step6-center">
+									<p class="section-title wow slideInDown" data-id-delay="0.5s">Как вы хотите купить квартиру?</p>
+									<!-- /.section-title wow slideInDown  data-id-delay="0.2s"-->
+									<p class="section-subtitle wow slideInDown" data-id-delay="0.5s">
+										(Можно выбрать несколько вариантов ответов)
+									</p>
+									<div class="step6-center__ways">
+										<div class="row align-items-center justify-content-center">
+											<div class="col-12 col-md-5">
+												<label for="waysFirst" class="step6-center__way wow fadeInUp" data-wow-delay="0.1s" data-id="1">
+													<input type="checkbox" name="ways[]" id="waysFirst" data-id="1" value="В ипотеку">
+													<span>В ипотеку</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+											<div class="col-12 col-md-5">
+												<label for="waysSecond" class="step6-center__way wow fadeInUp" data-wow-delay="0.2s" data-id="2">
+													<input type="checkbox" name="ways[]" id="waysSecond" data-id="2" value="Материнским капиталом">
+													<span>Материнским капиталом</span>
+												</div>
+											</div>
+											<!-- /.col-md-5 -->
+										</div>
+										<!-- /.row -->
+										<div class="row align-items-center justify-content-center">
+											<div class="col-12 col-md-5">
+												<label for="waysThird" class="step6-center__way wow fadeInUp" data-wow-delay="0.3s" data-id="3">
+													<input type="checkbox" name="ways[]" id="waysThird" data-id="3" value="Военной ипотекой">
+													<span>Военной ипотекой</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+											<div class="col-12 col-md-5">
+												<label for="waysFourth" class="step6-center__way wow fadeInUp" data-wow-delay="0.4s" data-id="4">
+													<input type="checkbox" name="ways[]" id="waysFourth" data-id="4" value="Чистая покупка">
+													<span>Чистая покупка</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+										</div>
+										<!-- /.row -->
+										<div class="row align-items-center">
+											<div class="col-12 col-md-5 offset-md-1">
+												<label for="waysFifrth" class="step6-center__way wow fadeInUp" data-wow-delay="0.5s" data-id="5">
+													<input type="checkbox" name="ways[]" id="waysFifrth" data-id="5" value="Долевая покупка">
+													<span>Долевая покупка</span>
+												</label>
+											</div>
+											<!-- /.col-md-5 -->
+										</div>
+										<!-- /.row -->
+					
+										<div class="row align-items-center justify-content-center">
+											<div class="col-md-5 col-lg-3">
+												<a href="#" class="step6-center__prev">Вернуться на шаг назад</a>
+											</div>
+											<!-- /.col-md-3 -->
+											<div class="col-md-5 col-lg-4">
+												<button type="button" class="step6-center__btn button disabled button-long">Получить результат</button>
+											</div>
+											<!-- /.col-md-3 -->
+										</div>
+										<!-- /.row -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ./step6 -->
+					</div>
+					<!-- ./overlay -->
+					<div class="result">
+						<div class="container">
+							<div class="row ">
+								<div class="col-6 col-lg-2">
+									<img src="img/main/logo.png" alt="Логотип" class="main-logo">
+								</div>
+								<div class="col-12 col-lg-4  order-12 order-lg-1">
+									<h2 class="main-title">Бэст – центр недвижимости</h2>
+									<h3 class="main-subtitle">13 лет на рынке недвижимости</h3>
+								</div>
+								<div class="col-6 col-lg-6 order-1 order-lg-12">
+									<div class="main-contacts">
+										<p class="main-contacts__phone">8 (343) 310-03-23</p>
+									<p class="main-contacts__addres">г.Екатеринбург,<br> ул.8 Марта, 12А</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-lg-auto col-xl-5">
+									<div class="result-center wow zoomIn" data-wow-delay="0.8s">
+										<p class="result-center__title">Результат</p>
+										<!-- /.result-center__title -->
+										<p class="result-center__subtitle">Мы учли ваши пожелания<br> и подобрали 12 вариантов квартир<br> по вашим критериям <img src="img/result/arrow.png" alt="указатель"> </p>
+										<!-- /.result-center__subtitle -->
+										<p class="result-center__offer">Остался последний шаг, напишите свой номер,<br> мы свяжемся с вами и подберем квартиру конкретно под вас.</p>
+										<!-- /.result-center-offer -->
+										<div class="result-center__form" id="result-form">
+											<img src="img/result/phone-call-out.svg" alt="иконка телефона">
+											<input type="tel" name="tel" id="tel" required placeholder="+7 (XXX) XXX-XX-XX">
+										</div>
+									 <button onclick="yaCounter49581292.reachGoal('send');" class="result-center__btn button button-long" value="Отправить" id="submit" type="submit">Отправить</button>
+									</div>
+									<!-- /.result-center -->
+								</div>
+								<!-- /.col -->
+								<div class="col-md-auto col-xl-7 col-lg-auto">
+									<img src="img/result/Nothing.png" alt="Предложение" class="result-center__img"></img>
+									<img src="img/mobile/result-plane1.png" alt="Предложение" class="result-center__mobileimg">
+								</div>
+							</div>							
+						</div>
+					</div>
+			</div>
+			<!-- ./result -->
+		</form>
+				
+				
+				<div class="overlayThanks">
+					<div class="thanks">
+						<div class="container">
+							<div class="thanks-logo"><img src="img/thanks/check-circle-2.svg" alt="Готово"></div>
+							<!-- /.thanks-logo -->
+							<div class="thanks-title">Благодорим Вас!</div>
+							<!-- /.thanks-title -->
+							<div class="thanks-subtitle">Наш менеджер свяжется с вами в ближайшее время</div>
+							<!-- /.thanks-subtitle -->
+							<div class="thanks-btn button button-long">Закрыть</div>
+							<!-- /.thanks-btn button button-long -->
+						</div>
+						<!-- /.container -->
+					</div>
+					<!-- /.thanks -->
+				</div>
+
+    <script src="scripts/jquery-3.3.1.min.js" ></script>
+    <script src="scripts/jquery.maskedinput.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <script src="http://megatimer.ru/s/ac2e2a779770d1e315388a96549f7f47.js"></script>
+				<script>
+				$(document).ready(function() {
+	    $("#submit").on('click', function() { //Change
+	      // var th = $('#tel')
+	      var th = $('#myForm').serialize();
+	      $.ajax({
+	        type: "POST",
+	        url: "send.php", //Change
+	        data: th
+	      }).done(function() {
+	        console.log(th);
+	        $('.overlayThanks').show();
+	        $('html, body').animate({scrollTop: 0},500);
+	            return false;
+	      });
+	      return false;
+	    });
+				});
+				</script>
+  </body>
+</html>
